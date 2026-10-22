@@ -1,84 +1,158 @@
-<!DOCTYPE>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>PRIN135-PrelimExam</title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
 
-    <body>
-        <header>
-            <nav>
-                <p><a href="#profile">Profile</a> |
-                    <a href="#skills">Skills</a> | 
-                    <a href="#education">Education</a> | 
-                    <a href="#awards-and-achievements">Awards and Achievements</a> | 
-                    <a href="#contact-me">Contact Me</a>
-                </p>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIN135 - Midterm Exam | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <main>
-            <section id="profile">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rJT-6N7_VlaLS8rNq-G2VfBq84roXvgaKneuFckylw&s=10" alt="Profile Picture" width="250">
-                <h1>Eryn Arabella C. Balmes</h1>
-                <p><a href="mailto:https://mail.google.com" target="_blank">erynbalmes@email.com</a> | <a href="tel:+639691234567" target="_blank">+639691234567</a> | <a href="https://github.com/balmes2433695-ops/PRIN135-PrelimExam.git" target="_blank">profile.github.com</a></p>
-                <p>A 3rd Year BSIT student at Centro Escolar University - Malolos,<br>currently taking the course Web Systems and Technologies.</p>
-            </section>
-            <section id="skills">
-                <h2><u>Skills</u></h2>
-                <ul>
-                    <li>Drawing</li>
-                    <li>Sewing</li>
-                    <li>Coding</li>
-                    <li>Cleaning</li>
-                    <li>Memorizing</li>
+<body id="top">
+
+    <!-- ---------- Navigation ---------- -->
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="#top" class="nav-brand">Portfolio</a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ---------- Header ---------- -->
+    <header class="site-header">
+        <div class="header-inner clearfix">
+
+            <div class="photo-box">
+                <div class="photo-frame">
+                    <!-- Replace the image with your own profile picture -->
+                    <img class="photo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1rJT-6N7_VlaLS8rNq-G2VfBq84roXvgaKneuFckylw&s=10" alt="Profile picture of Eryn Arabella C. Balmes">
+                </div>
+            </div>
+
+            <div class="header-text">
+                <h1 class="name">Eryn Arabella C. Balmes</h1>
+                <ul class="header-links">
+                    <li><a href="tel:+639123456789">+63 969 123 4567</a></li>
+                    <li><a href="mailto:erynbalmes@email.com">erynbalmes@email.com</a></li>
+                    <li><a href="https://github.com/balmes2433695-ops" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    </li>
                 </ul>
-            </section>
-            <section id="education">
-                <h2><u>Education</u></h2>
-                <ol>
-                    <li>ECI Catholic School (2010 - 2012)</li>
-                    <li>MDES Elementary School (2012 -2018)</li>
-                    <li>BulSU Laboratory High School (2018 - 2022)</li>
-                    <li>Centro Escolar Integrated School (2022 - 2024)</li>
-                    <li>Centro Escolar University (2024 - Present)</li>
-                </ol>
-            </section>
-            <section id="awards-and-achievements">
-                <h2><u>Awards and Achievements</u></h2>
-                <ol>
-                    <li>Conduct Award (2018)</li>
-                    <li>With High Honors (2024)</li>
-                    <li>President's Lister (2025)</li>
-                    <li>GitHub Project Collaborator 2026</li>
-                </ol>
-            </section>
-            <section id="contact-me">
-                <h2><u>Contact Me</u></h2>
-                <form>
-                    <label for="name">Name:</label><br><br>
-                    <input id="name" type="text" required maxlength="25" name="name" placeholder="Eryn Balmes"><br><br>
-                    
-                    <label for="email">Email:</label><br><br>
-                    <input id="email" type="email" required maxlength="25" name="email" placeholder="erynbalmes@email.com"><br><br>
-
-                    <label for="message">Message:</label><br><br>
-                    <textarea required maxlength="255" cols="30" rows="10" name="message" placeholder="Enter your messsage here."></textarea><br><br>
-
-                    <button type="submit">Contact Me</button>
-                </form>
-            </section>
-        </main>
-
-        <footer>
-            <nav>
-                <p><a href="#profile">Profile</a> |
-                    <a href="#skills">Skills</a> | 
-                    <a href="#education">Education</a> | 
-                    <a href="#awards-and-achievements">Awards and Achievements</a> | 
-                    <a href="#contact-me">Contact Me</a>
+                <p class="profile">
+                    A 3rd Year BSIT student at Centro Escolar University - Malolos,
+                    currently taking the course Web Systems and Technologies.
                 </p>
-            </nav>
-        </footer>
-    </body>
+            </div>
+
+        </div>
+    </header>
+
+    <main class="wrapper">
+
+        <!-- ---------- Skills ---------- -->
+        <section id="skills" class="card">
+            <h2>Skills</h2>
+            <ul class="skill-list">
+                <li>Drawing</li>
+                <li>Sewing</li>
+                <li>Coding</li>
+                <li>Cleaning</li>
+                <li>Memorizing</li>
+            </ul>
+        </section>
+
+        <!-- ---------- Education ---------- -->
+        <section id="education" class="card">
+            <h2>Education</h2>
+
+            <div class="entry">
+                <span class="entry-year">2024 - Present</span>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p class="entry-school">Central Escolar University, Malolos</p>
+            </div>
+
+            <div class="entry">
+                <span class="entry-year">2022 - 2024</span>
+                <h3>Senior High School - STEM Strand</h3>
+                <p class="entry-school">Centro Escolar Integrated School, Malolos</p>
+            </div>
+
+            <div class="entry">
+                <span class="entry-year">2018 - 2022</span>
+                <h3>Junior High School</h3>
+                <p class="entry-school">BulSU Laboratory High School, Malolos</p>
+            </div>
+
+            <div class="entry">
+                <span class="entry-year">2012 - 2018</span>
+                <h3>Elementary School</h3>
+                <p class="entry-school">MDES Elementary School, Calumpit</p>
+            </div>
+
+            <div class="entry">
+                <span class="entry-year">2010 - 2012</span>
+                <h3>Pre-School</h3>
+                <p class="entry-school">ECI Catholic School, Calumpit</p>
+            </div>
+        </section>
+
+        <!-- ---------- Achievements ---------- -->
+        <section id="achievements" class="card">
+            <h2>Achievements</h2>
+            <ul class="achievement-list">
+                <li>
+                    <strong>Conduct Award</strong> - A.Y. 2017-2018
+                </li>
+                <li>
+                    <strong>With High Honors</strong> - Junior High School, 2024
+                </li>
+                <li>
+                    <strong>President's Lister</strong> - 1st and 2nd Semester, A.Y. 2025-2026
+                </li>
+                <li>
+                    <strong>GitHub Project Collaborator</strong> - 2026
+                </li>
+            </ul>
+        </section>
+
+        <!-- ---------- Contact me ---------- -->
+        <section id="contact" class="card">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <div class="form-row clearfix">
+                    <div class="field field-left">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Eryn Balmes" required>
+                    </div>
+
+                    <div class="field field-right">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="erynbalmes@email.com" required>
+                    </div>
+                </div>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your messsage here." required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ---------- Footer ---------- -->
+    <footer class="site-footer">
+        <p class="footer-name">Eryn Arabella C. Balmes &middot; Portfolio</p>
+        <a href="#top" class="back-to-top">Back to top &uarr;</a>
+    </footer>
+
+</body>
+
 </html>
